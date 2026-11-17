@@ -3,15 +3,16 @@
 /**
  * CATÁLOGO — edite aqui para mudar títulos, imagens ou URLs.
  * As imagens devem ficar na mesma pasta que index.html, com grafia idêntica.
- * As oito capas futuras são reconhecidas automaticamente quando enviadas
- * como CAPA03.png, CAPA04.png, ... CAPA10.png.
+ * As quatro primeiras capas: Tiago.png, Andreia.png, Mariane.png, Dijalmary.png.
+ * As seis capas futuras são reconhecidas automaticamente quando enviadas
+ * como CAPA05.png, CAPA06.png, ... CAPA10.png.
  * O campo link é opcional. Use uma URL real quando o material estiver disponível.
  */
 const CATALOGO = [
   { id:1,  titulo:"Relação Teoria e Prática", autor:"Tiago Junior Gobetti", imagem:"Tiago.png",   link:"" },
   { id:2,  titulo:"Gestão do Tempo",        autor:"Andréia de Paula Moura", imagem:"Andreia.png", link:"" },
-  { id:3,  titulo:"Espaço 03",              autor:"Nova experiência",      imagem:"CAPA03.png", link:"" },
-  { id:4,  titulo:"Espaço 04",              autor:"Nova experiência",      imagem:"CAPA04.png", link:"" },
+  { id:3,  titulo:"Comunicação e Engajamento", autor:"Mariane Aurélia da Rocha", imagem:"Mariane.png", link:"" },
+  { id:4,  titulo:"Ação Modelar — Relação Teoria e Prática", autor:"Dijalmary Matos Prates Chas", imagem:"Dijalmary.png", link:"" },
   { id:5,  titulo:"Espaço 05",              autor:"Nova experiência",      imagem:"CAPA05.png", link:"" },
   { id:6,  titulo:"Espaço 06",              autor:"Nova experiência",      imagem:"CAPA06.png", link:"" },
   { id:7,  titulo:"Espaço 07",              autor:"Nova experiência",      imagem:"CAPA07.png", link:"" },
@@ -75,7 +76,7 @@ function createCard(item) {
 
   const img = document.createElement("img");
   img.alt = `Capa de ${item.titulo}`;
-  img.loading = item.id <= 2 ? "eager" : "lazy";
+  img.loading = item.id <= 4 ? "eager" : "lazy";
   img.decoding = "async";
   img.hidden = true;
 

@@ -1,41 +1,49 @@
 PLATAFORMA STREAMING — COMPARTILHAR EXPERIÊNCIAS
 ================================================
 
-Arquivos de código deste pacote (enviar à raiz do GitHub):
+Título: Compartilhar experiências, ampliar possibilidades.
+
+ARQUIVOS DE CÓDIGO (enviar à raiz do repositório GitHub)
   index.html
   style.css
   script.js
 
-IMAGENS JÁ NA RAIZ DO GITHUB (grafia exata):
-  Tiago.png     -> Relação Teoria e Prática
-  Andreia.png   -> Gestão do Tempo
+CAPAS PNG NA RAIZ DO GITHUB (nomes exatos)
+  Linha 1, coluna 1: Tiago.png     — Relação Teoria e Prática
+  Linha 1, coluna 2: Andreia.png   — Gestão do Tempo
+  Linha 2, coluna 1: Mariane.png   — Comunicação e Engajamento
+  Linha 2, coluna 2: Dijalmary.png — Ação Modelar — Relação Teoria e Prática
 
-DEMAIS OITO ESPAÇOS
-  CAPA03.png, CAPA04.png, CAPA05.png, CAPA06.png,
-  CAPA07.png, CAPA08.png, CAPA09.png e CAPA10.png
+As quatro imagens não fazem parte do ZIP. Envie os arquivos PNG
+correspondentes à mesma pasta que index.html, style.css e script.js.
 
-Quando um desses arquivos for enviado à raiz do GitHub,
-o espaço correspondente exibirá automaticamente a capa.
-Edite o array CATALOGO no início de script.js para personalizar
-os títulos, nomes dos formadores, arquivos e links de acesso.
-Exemplo: { id:3, titulo:"Mentoria", autor:"Nome do formador",
-           imagem:"CAPA03.png", link:"https://seusite.github.io/..." }
+SEIS ESPAÇOS RESERVADOS
+  Linha 3: CAPA05.png | CAPA06.png
+  Linha 4: CAPA07.png | CAPA08.png
+  Linha 5: CAPA09.png | CAPA10.png
 
-FUNCIONAMENTO
-- 10 capas em duas colunas no computador, cinco linhas.
-- Capas sempre na proporção 16:9.
-- Clique numa capa para visualizá-la em tamanho maior.
-- Campo de busca por experiência e por formador.
-- Sem bibliotecas externas, sem login e sem banco de dados.
-- Em celulares, as capas ficam em uma coluna para melhor leitura.
-- O título principal fica em uma única linha, mesmo em telas menores.
-- A plataforma não envia nem armazena imagens: elas são servidas pelo GitHub Pages.
+Para acrescentar novas capas, envie o PNG com o nome indicado e edite,
+se desejar, os metadados de título, autor e link no array CATALOGO
+no início do arquivo script.js.
 
-PUBLICAÇÃO
-1. Envie index.html, style.css e script.js à raiz do repositório.
-2. Confira se Tiago.png e Andreia.png estão na mesma pasta.
-3. Em Settings > Pages, escolha Deploy from a branch e main / (root).
-4. Salve e abra o endereço publicado.
+FUNCIONALIDADES
+- Dez capas em cinco linhas com duas colunas no computador.
+- Imagens 16:9 carregadas automaticamente da raiz do GitHub.
+- Clique para ampliar a capa, com opção de abrir material externo.
+- Busca por tema ou nome do formador.
+- Em celulares: uma coluna para melhor visualização.
+- Sem dependências externas, login ou banco de dados.
+- Título principal preservado em uma linha.
 
-IMPORTANTE: o GitHub diferencia letras maiúsculas/minúsculas.
-Use exatamente Tiago.png, Andreia.png, CAPA03.png, etc.
+PUBLICAÇÃO NO GITHUB PAGES
+1. Extraia o ZIP e envie index.html, style.css e script.js à raiz.
+2. Garanta que Tiago.png, Andreia.png, Mariane.png e Dijalmary.png
+   estejam nessa mesma raiz.
+3. Acesse Settings > Pages > Deploy from a branch.
+4. Selecione main e /(root), salve e abra o endereço publicado.
+5. Se a página estiver em cache, atualize com Ctrl+F5.
+
+IMPORTANTE
+GitHub diferencia letras maiúsculas/minúsculas. Use exatamente:
+Tiago.png, Andreia.png, Mariane.png e Dijalmary.png.
+As novas imagens precisam ser publicadas no repositório para aparecerem.
