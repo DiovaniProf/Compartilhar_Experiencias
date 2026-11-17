@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#061426">
+  <meta name="description" content="Plataforma de compartilhamento de experiências da formação continuada.">
+  <title>Compartilhar experiências, ampliar possibilidades.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="masthead">
+      <div class="brand-row">
+        <div class="brand" aria-label="Formação continuada">
+          <span class="brand-symbol" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 8.5 16 3l12 5.5-12 5.6L4 8.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M8 11v7.5c5.2 3.7 10.8 3.7 16 0V11M27.5 9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M3 24c5-2.8 9.8-2.8 13 1.3 3.2-4.1 8-4.1 13-1.3M16 25.3V30" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>FORMAÇÃO <b>CONTINUADA</b></span>
+        </div>
+        <div class="brand-tag"><span class="signal" aria-hidden="true"></span> Acervo de práticas formativas</div>
+      </div>
+      <div class="hero">
+        <p class="eyebrow">UMA EXPERIÊNCIA PODE INSPIRAR MUITAS OUTRAS</p>
+        <h1>Compartilhar experiências, ampliar possibilidades.</h1>
+        <div class="hero-underline" aria-hidden="true"></div>
+        <p class="hero-subtitle">Experiências que aproximam ideias, práticas e aprendizagem.</p>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="library" aria-labelledby="libraryTitle">
+        <div class="library-heading">
+          <div>
+            <p class="section-eyebrow">BIBLIOTECA DIGITAL</p>
+            <h2 id="libraryTitle">Experiências compartilhadas <span class="title-dot">.</span></h2>
+          </div>
+          <div class="library-tools">
+            <label class="search" for="searchInput">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <input id="searchInput" type="search" placeholder="Buscar experiência" autocomplete="off" aria-label="Buscar experiência">
+            </label>
+            <span id="counter" class="item-counter" aria-live="polite">10 capas</span>
+          </div>
+        </div>
+        <div id="coverGrid" class="cover-grid" aria-label="Catálogo de dez capas"></div>
+        <p class="empty-state" id="emptyState" hidden>Nenhuma experiência corresponde à sua busca.</p>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Compartilhar saberes transforma práticas.</span><span>Formação continuada • Biblioteca de experiências</span></footer>
+  </div>
+
+  <div id="coverDialog" class="modal" role="presentation" hidden>
+    <div class="modal-backdrop" data-close-dialog></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="dialogTitle" aria-describedby="dialogDescription">
+      <div class="modal-top">
+        <span class="modal-label">VISUALIZAR EXPERIÊNCIA</span>
+        <button type="button" class="modal-close" id="closeDialog" aria-label="Fechar visualização">✕</button>
+      </div>
+      <div class="modal-art" id="dialogArt"></div>
+      <div class="modal-content">
+        <h2 id="dialogTitle"></h2>
+        <p id="dialogDescription"></p>
+        <div class="modal-actions">
+          <a id="openContent" class="primary-action" href="#" target="_blank" rel="noopener noreferrer" hidden>Acessar conteúdo <span aria-hidden="true">↗</span></a>
+          <button type="button" class="secondary-action" id="closeDialogBottom">Fechar</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
